@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Ensure proper rendering on mobile devices -->
+    <title>Tetris Game</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS stylesheet -->
+</head>
+<body>
+    <div class="game-container"> <!-- Container for the game board and info section -->
+        <canvas id="tetris" width="300" height="600" role="img" 
+        aria-label="Tetris game board"></canvas>
+        <!-- Canvas for the main Tetris game -->
+        <div class="info"> <!-- Info section next to the game board -->
+        <div class="info"> <!-- Info section next to the game board -->
+            <h1>Tetris Game</h1> <!-- Main heading -->
+            <h2>Next Piece</h2> <!-- Subheading for the next piece -->
+            <canvas id="next-piece" width="150" height="150" role="img" 
+            aria-label="Next Tetris piece"></canvas>
+            <div id="controls"> <!-- Container for the control buttons -->
+                <button id="start-button">Start</button> <!-- Start button -->
+                <button id="reset-button">Reset</button> <!-- Reset button -->
+                <button id="pause-button">Pause</button> <!-- Pause button -->
+            </div>
+            <div id="score" aria-live="polite">Score: 0</div>
+            <!-- Score display -->
+            <div id="high-score" aria-live="polite">High Score: 0</div>
+            <!-- High Score display -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

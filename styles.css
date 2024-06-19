@@ -1,0 +1,117 @@
+/* Basic reset for consistent styling across browsers */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; 
+    /* Include padding and border in element's total width and height */
+}
+
+body {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column; /* Arrange items in a column */
+    font-family: 'Arial', sans-serif; /* Use Arial or sans-serif font */
+    background-color: #2c2c2f; /* Set background color to dark gray */
+    color: #e1e1e1; /* Set text color to light gray */
+    height: 100vh; /* Set height to viewport height */
+}
+
+canvas {
+    border: 2px solid #000; /* Add black border */
+    margin-bottom: 10px; /* Add space below */
+}
+
+#controls {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Add space between items */
+}
+
+#score {
+    margin: 10px; /* Add margin around */
+}
+
+.game-container {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+}
+
+canvas {
+    background-color: #e1e1e1; 
+    /* Set background color to light gray */
+    border: 2px solid #ccc; /* Add light gray border */
+}
+
+.info {
+    margin-left: 20px; /* Add left margin */
+    text-align: center; /* Center text */
+}
+
+h1, h2 {
+    color: #cdcdcd; /* Set text color to light gray */
+}
+
+h1 {
+    margin-top: -10px; /* Move element up slightly */
+    margin-bottom: 40px; /* Add bottom margin */
+    font-size: 2em; /* Set font size */
+    color: #F7F9F2; /* Set text color to light green */
+}
+
+h2 {
+    margin-top: -5px; /* Move element up slightly */
+    font-size: 1.2em; /* Set font size */
+}
+
+button {
+    padding: 8px 15px; /* Add padding */
+    background-color: #3e6fa1; /* Set background color */
+    color: #ececec; /* Set text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor on hover */
+    font-weight: bold; /* Set bold text */
+    transition: background-color 0.3s;
+     /* Add transition for background color */
+}
+
+button:hover {
+    background-color: #6db9ef; 
+    /* Change background color on hover */
+}
+ /* Define colors for blocks  */
+.block-color-0 { background-color: #ec8a94; }
+.block-color-1 { background-color: #FFDE95; }
+.block-color-2 { background-color: #FAAB78; }
+.block-color-3 { background-color: #E8C872; }
+.block-color-4 { background-color: #9ac7e9; }
+.block-color-5 { background-color: #cf88cf; }
+.block-color-6 { background-color: #AC87C5; }
+.block-color-7 { background-color: #8a94ec; }
+.block-color-8 { background-color: #AAE3E2; }
+.block-color-9 { background-color: #E0AED0; }
+.block-color-10 { background-color: #8294C4; }
+.block-color-11 { background-color: #92C7CF; }
+.block-color-12 { background-color: #EAC7C7; }
+.block-color-13 { background-color: #95BDFF; }
+.block-color-14 { background-color: #E8A0BF; }
+.block-color-15 { background-color: #D37676; }
+
+#next-piece {
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background-color: #e1e1e1; /* Set background color */
+    border: 2px solid #ccc; /* Add light gray border */
+    margin-left: 29px; /* Add left margin */
+}
+
+@media (max-width: 600px) {
+    canvas {
+        width: 100%; /* Set canvas width to 100% */
+        height: auto; /* Set canvas height to auto */
+    }
+    .game-container {
+        flex-direction: column; /* Arrange items in a column */
+    }
+}
